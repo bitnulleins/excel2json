@@ -176,7 +176,22 @@ input[type="file"] {
     padding: 10px 12px;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
     width: 100%;
+}
+
+.custom-file-upload:active {
+    position: relative;
+    top: 1px;
+}
+
+.custom-file-upload:hover {
+    background: var(--primary);
+    background: linear-gradient(
+        180deg,
+        rgba(9, 170, 9, 1) 0%,
+        rgba(0, 128, 0, 1) 100%
+    );
 }
 
 #loader {

@@ -75,6 +75,12 @@ input[type="file"] {
     display: none;
 }
 
+.desc {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+
 .table {
     font-size: 0.9em;
     display: table;
@@ -167,6 +173,22 @@ input[type="file"] {
     cursor: grab;
 }
 
+select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+    background: #fff;
+    padding: 10px 12px;
+    font-family: inherit;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
+
 .custom-file-upload {
     background: var(--primary);
     text-transform: uppercase;
@@ -195,8 +217,8 @@ input[type="file"] {
 }
 
 #loader {
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
     border: 5px solid var(--primary);
     border-bottom-color: transparent;
     border-radius: 50%;
@@ -307,11 +329,13 @@ input[type="file"] {
     border-right: 1px solid var(--text-alt);
     flex: 50%;
     text-align: center;
+    position: relative;
 }
 
 .flex-item-right {
     padding: 0 20px 0;
     flex: 50%;
+    position: relative;
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */

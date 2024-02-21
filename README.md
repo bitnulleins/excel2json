@@ -25,8 +25,8 @@ This online tool helps to convert Excel XLSX files **GDPR-friendly** to JSON wit
 
 ### How I can be sure, that it is data privacy friendly?
 
-1. _Serverless_: This tool is directly hosted on Github with Github pages with pure JS and HTML. Theres no server where file could uploaded to.
-2. _Transparency_: The hosted code is open source published on this Repository. Feel free to check the simple code lines.
+1. _Serverless_: This tool is directly hosted on Github with [Github pages](https://pages.github.com) with pure JS and HTML. Theres no server where file could uploaded to.
+2. _Transparency_: The hosted code is open source published on this Repository. Feel free to ][check](./index.html) the simple code lines.
 
 ### Get unexpected result
 

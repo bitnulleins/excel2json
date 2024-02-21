@@ -10,7 +10,7 @@ This online tool helps to convert Excel XLSX files **GDPR-friendly** to JSON wit
 -   ⌛️ Fast and easy-to-use frontend
 -   🔐 GDPR friendly for company data sheets
 
-**No required setup or installation**, just open the Github Page [🔄 Excel2JSON]().
+**No required setup or installation**, just open the Github Page [🔄 Excel2JSON](https://bitnulleins.github.io/excel2json/).
 
 ## Compatibility
 

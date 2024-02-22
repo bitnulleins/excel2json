@@ -2,6 +2,8 @@
 
 <img src="https://img.shields.io/badge/status-online-green">
 
+*...because Excel can't export to JSON.*
+
 This online tool helps to convert Excel XLSX files **GDPR-friendly** to JSON with the following features:
 
 -   📊 Convert Excel XLSX files to JSON

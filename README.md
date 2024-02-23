@@ -16,7 +16,7 @@ This online tool helps to convert Excel XLSX files **GDPR-friendly** to JSON wit
 **No required setup or installation**, just open the 🔄 [**Excel2JSON**](https://bitnulleins.github.io/excel2json/) GitHub Page in browser.
 
 > [!WARNING]
-> Please be patient if you upload a large Excel / CSV file for processding.
+> Please be patient if you upload a large Excel / CSV file for processing.
 
 ## Compatibility
 

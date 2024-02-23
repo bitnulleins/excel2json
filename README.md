@@ -10,7 +10,7 @@ This online tool helps to convert Excel XLSX files **GDPR-friendly** to JSON wit
 -   💻 Direct conversion in-memory on browser without server
 -   🗄️ Can handle large Excel files (>100MB)
 -   ⌛️ Fast and easy-to-use frontend
--   📶 Code also works offline
+-   🛜 Code also works offline
 -   🔐 GDPR friendly for company data sheets
 
 **No required setup or installation**, just open the 🔄 [**Excel2JSON**](https://bitnulleins.github.io/excel2json/) GitHub Page in browser.

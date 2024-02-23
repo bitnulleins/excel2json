@@ -320,11 +320,14 @@ select {
 }
 
 #drop:hover .excel:after,
-#drop:active .excel:after,
-#drop:hover .csv:after,
-#drop:active .csv:after {
+#drop:active .excel:after {
     background-color: var(--secondary);
     content: "JSON";
+}
+
+#drop:hover .csv,
+#drop:active .csv {
+    display: none;
 }
 
 .flex-container {

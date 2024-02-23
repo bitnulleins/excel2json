@@ -7,6 +7,12 @@ dropContainer.ondragover = dropContainer.ondragenter = function (evt) {
     evt.preventDefault();
 };
 
+dropContainer.onclick = function (evt) {
+    var evt = document.createEvent("MouseEvents");
+    evt.initEvent("click", true, false);
+    file.dispatchEvent(evt);
+};
+
 dropContainer.ondrop = function (evt) {
     // pretty simple -- but not for IE :(
     file.files = evt.dataTransfer.files;

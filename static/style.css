@@ -27,8 +27,8 @@ header {
     position: fixed;
     z-index: 999;
     text-align: center;
-    height: 80px;
-    padding: 20px;
+    height: 60px;
+    padding: 10px 20px;
     font-weight: bold;
     font-size: 1.2em;
     letter-spacing: -1px;
@@ -261,7 +261,7 @@ select {
     -moz-box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
     -webkit-box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
     box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
-    display: block;
+    display: inline-block;
     width: 60px;
     height: 76px;
     position: relative;
@@ -310,8 +310,19 @@ select {
     content: "XLSX";
 }
 
+.csv {
+    margin-left: 10px;
+}
+
+.csv:after {
+    background-color: gray;
+    content: "CSV";
+}
+
 #drop:hover .excel:after,
-#drop:active .excel:after {
+#drop:active .excel:after,
+#drop:hover .csv:after,
+#drop:active .csv:after {
     background-color: var(--secondary);
     content: "JSON";
 }
@@ -320,7 +331,7 @@ select {
     display: flex;
     min-width: 1px;
     max-width: 700px;
-    margin: 120px auto 30px;
+    margin: 120px auto 50px;
     width: 100%; /* 2 */
 }
 
@@ -352,6 +363,11 @@ select {
 
     .flex-item-right {
         padding-top: 30px;
+    }
+
+    .desc {
+        transform: none;
+        position: relative;
     }
 }
 

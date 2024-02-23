@@ -27,15 +27,18 @@
                 <div class="flex-item-left">
                     <div id="drop">
                         <div class="doc-icon excel"></div>
-                        Drag & Drop Files<br />
-                        <small>Drop any Excel file or</small>
+                        <div class="doc-icon csv"></div>
+                        <div>
+                            Drag & Drop Files<br />
+                            <small>Drop any Excel/CSV file or</small>
+                        </div>
                     </div>
                     <select id="sheet" style="display: none"></select>
                     <span id="loader" style="display: none"></span>
                     <label for="data" class="custom-file-upload">
                         Browse your Files
                     </label>
-                    <input type="file" id="data" accept=".xlsx, .xls" />
+                    <input type="file" id="data" accept=".xlsx, .xls, .csv" />
                 </div>
 
                 <div class="flex-item-right">
@@ -53,7 +56,7 @@
                                 <div><span class="gg-close"></span></div>
                             </div>
                             <div class="table-row">
-                                <div>Large files (>1 MB)</div>
+                                <div>Large files (>100 MB)</div>
                                 <div><span class="gg-check"></span></div>
                                 <div><span class="gg-close"></span></div>
                             </div>
@@ -68,7 +71,7 @@
                                 <div><span class="gg-close"></span></div>
                             </div>
                             <div class="table-row">
-                                <div>Convert XLSX to JSON</div>
+                                <div>Convert XLSX/CSV to JSON</div>
                                 <div><span class="gg-check"></span></div>
                                 <div><span class="gg-check"></span></div>
                             </div>

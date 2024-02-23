@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Excel to JSON Converter | Online XLSX converter</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+        <script src="./static/xlsx.mini.min.js"></script>
         <link href="./static/style.css" rel="stylesheet" />
         <link
             rel="icon"
@@ -26,8 +26,11 @@
             <div class="flex-container">
                 <div class="flex-item-left">
                     <div id="drop">
-                        <div class="doc-icon excel"></div>
-                        <div class="doc-icon csv"></div>
+                        <div class="doc-container">
+                            <div class="doc-icon excel"></div>
+                            <div class="doc-icon csv"></div>
+                            <div class="doc-icon json"></div>
+                        </div>
                         <div>
                             Drag & Drop Files<br />
                             <small>Drop any Excel/CSV file or</small>

@@ -237,6 +237,10 @@ select {
     }
 }
 
+.doc-container {
+    position: relative;
+}
+
 .doc-icon {
     background: #eee;
     background: -moz-linear-gradient(
@@ -305,13 +309,17 @@ select {
     padding: 2px 0;
 }
 
+.excel,
+.csv {
+    opacity: 1;
+    transition: 0.5s all ease-in-out;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .excel:after {
     background-color: var(--primary);
     content: "XLSX";
-}
-
-.csv {
-    margin-left: 10px;
 }
 
 .csv:after {
@@ -319,15 +327,31 @@ select {
     content: "CSV";
 }
 
-#drop:hover .excel:after,
-#drop:active .excel:after {
+.json {
+    position: absolute;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%);
+    transition: 0.5s all ease-in-out 200ms;
+}
+
+.json:after {
     background-color: var(--secondary);
     content: "JSON";
 }
 
-#drop:hover .csv,
-#drop:active .csv {
-    display: none;
+#drop:hover .excel {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+#drop:hover .csv {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+#drop:hover .json {
+    opacity: 1;
 }
 
 .flex-container {

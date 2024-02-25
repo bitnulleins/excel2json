@@ -7,7 +7,19 @@
     --text: #f0f0f0;
     --text-alt: #555;
     --primary: #008000;
+    --button-text: #fff;
     --secondary: darkorange;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #f0f0f0;
+        --text: #222;
+        --text-alt: #555;
+        --primary: #008000;
+        --button-text: #fff;
+        --secondary: darkorange;
+    }
 }
 
 body,
@@ -25,6 +37,7 @@ header {
     top: 0;
     width: 100%;
     position: fixed;
+    color: var(--button-text);
     z-index: 999;
     text-align: center;
     height: 60px;
@@ -56,7 +69,7 @@ a:link,
 a:hover,
 a:visited {
     text-decoration: none;
-    color: #fff;
+    color: var(--text);
 }
 
 h1 {
@@ -191,6 +204,7 @@ select {
 
 .custom-file-upload {
     background: var(--primary);
+    color: var(--button-text);
     text-transform: uppercase;
     display: block;
     font-size: 0.8em;
@@ -265,6 +279,7 @@ select {
     -moz-box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
     -webkit-box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
     box-shadow: inset rgba(255, 255, 255, 0.8) 0 1px 1px;
+    border: 1px solid #ccc;
     display: inline-block;
     width: 60px;
     height: 76px;

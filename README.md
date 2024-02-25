@@ -38,6 +38,10 @@ This online tool helps to convert Excel XLSX files **GDPR-friendly** to JSON wit
 
 Then maybe your source Excel file did not have structured data (table). Or your select the wrong excel sheet name.
 
+### How to generate large Excel test file?
+
+You can use the `RANDARRAY(<NUM_ROW>, <NUM_COL)` formulare to generate a large random file: `RANDARRAY(30000, 30)`.
+
 ## Credits
 
 Thanks to creator _SheetJSDev_ for the great [JS excel](https://github.com/SheetJS/sheetjs) package.
